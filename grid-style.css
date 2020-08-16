@@ -1,0 +1,106 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 200px 140px auto auto;
+  grid-template-areas: "header header header header""nav nav nav nav ""main main main main""section section section section""footer footer footer footer";
+  grid-gap: 0.5em 0px;
+  background-color: #3c85f6;
+  background-image: url(img/black-mamba.png);
+}
+
+header {
+  background-color: #FFA500;
+  grid-area: header;
+  justify-items: center;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+
+
+
+}
+
+nav {
+  background-color: #FFA500;
+  grid-area: nav;
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+
+
+}
+
+
+section {
+  grid-area: section;
+}
+main{
+  grid-area:main;
+}
+
+
+
+footer {
+  background-color: #FFA500;
+  grid-area: footer;
+  border-radius: 15px;
+  height: 70px;
+  margin-top: 45px;
+}
+
+/*För dator*/
+@media screen and (min-width: 700px){
+  body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px 50px 3fr 0.5fr;
+    grid-template-areas: "header header header header"
+                         "nav nav nav nav "
+                         "main main section section"
+                         "footer footer footer footer";
+    grid-gap: 0.5em 0px;
+    background-color: #3c85f6;
+    background-image: url(img/black-mamba.png);
+  }
+  header {
+    background-color: #FFA500;
+    grid-area: header;
+    justify-items: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+
+
+  }
+
+  nav {
+    background-color: #cfe2f3ff;
+    grid-area: nav;
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+
+  }
+
+
+  section {
+    grid-area: section;
+  }
+  main{
+    grid-area:main;
+  }
+
+
+
+  footer {
+    background-color: #FFA500;
+    grid-area: footer;
+    border-radius: 15px;
+    height: 70px;
+    margin-top: 45px;
+  }
+
+
+}
